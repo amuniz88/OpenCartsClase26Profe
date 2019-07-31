@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SingleSuite">
+              <span class="suite-name border-failed">SingleSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SingleSuite">
+                    <span>C:\Users\Al\IdeaProjects\Clase26OpenCartsProfeJenkins\src\test\java\TestOpenCart.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SingleSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SingleSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SingleSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SingleSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SingleSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SingleSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,  1 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SingleSuite" class="hide-methods failed suite-SingleSuite"> (hide)</a> <!-- hide-methods failed suite-SingleSuite -->
+                      <a href="#" panel-name="suite-SingleSuite" class="show-methods failed suite-SingleSuite"> (show)</a> <!-- show-methods failed suite-SingleSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SingleSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="ProductManagementTest" hash-for-method="addToCartTest(iMac, public void ProductManagementTest.addToCartTest(java.lang.String,java.lang.reflect.Method))">addToCartTest(iMac, public void ProductManagementTest.addToCartTest(java.lang.String,java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestOpenCart" hash-for-method="testRegistro(Alberto, Alonso, albddertdo0918sd9@alonso.uy, 094549888, 23568899, Alonso Company, Avenida Italia 44...)">testRegistro(Alberto, Alonso, albddertdo0918sd9@alonso.uy, 094549888, 23568899, Alonso Company, Avenida Italia 44...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SingleSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SingleSuite" class="hide-methods skipped suite-SingleSuite"> (hide)</a> <!-- hide-methods skipped suite-SingleSuite -->
+                      <a href="#" panel-name="suite-SingleSuite" class="show-methods skipped suite-SingleSuite"> (show)</a> <!-- show-methods skipped suite-SingleSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-SingleSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="ProductManagementTest" hash-for-method="addToCartMenorPrecio">addToCartMenorPrecio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SingleSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SingleSuite" class="hide-methods passed suite-SingleSuite"> (hide)</a> <!-- hide-methods passed suite-SingleSuite -->
+                      <a href="#" panel-name="suite-SingleSuite" class="show-methods passed suite-SingleSuite"> (show)</a> <!-- show-methods passed suite-SingleSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SingleSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="ProductManagementTest" hash-for-method="addToWishTest(iMac, public void ProductManagementTest.addToWishTest(java.lang.String,java.lang.reflect.Method))">addToWishTest(iMac, public void ProductManagementTest.addToWishTest(java.lang.String,java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="HomePageTest" hash-for-method="cambioMonedaParameters(GBP, public void HomePageTest.cambioMonedaParameters(java.lang.String,java.lang.reflect.Method))">cambioMonedaParameters(GBP, public void HomePageTest.cambioMonedaParameters(java.lang.String,java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestOpenCart" hash-for-method="testLogin(alberto0918sd9@alonso.uy, password01, public void TestOpenCart.testLogin(java.lang.String,java.lang....)">testLogin(alberto0918sd9@alonso.uy, password01, public void TestOpenCart.testLogin(java.lang.String,java.lang....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SingleSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SingleSuite" class="panel SingleSuite">
+          <div class="suite-SingleSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestOpenCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistro(Alberto, Alonso, albddertdo0918sd9@alonso.uy, 094549888, 23568899, Alonso Company, Avenida Italia 44...)">
+                  </a> <!-- testRegistro(Alberto, Alonso, albddertdo0918sd9@alonso.uy, 094549888, 23568899, Alonso Company, Avenida Italia 44...) -->
+                  <span class="method-name">testRegistro</span>
+                  <span class="parameters">(Alberto, Alonso, albddertdo0918sd9@alonso.uy, 094549888, 23568899, Alonso Company, Avenida Italia 4422, No tiene, Montevideo, 12440, Uruguay, Montevideo, password01, password01, YES, YES, public void TestOpenCart.testRegistro(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.InterruptedException)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (a9fbc164476226a4d365124294be7933)] -&gt; xpath: //*[@id=&quot;top-links&quot;]//*[contains(text(),&apos;My Account&apos;)]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3Q7HR6&apos;, ip: &apos;192.168.31.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Al\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9fbc164476226a4d365124294be7933
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at utils.SeleniumUtils.clickElement(SeleniumUtils.java:18)
+	at pageObjects.NavigateBar.clickInRegister(NavigateBar.java:56)
+	at pageObjects.BasePage.clickInRegister(BasePage.java:36)
+	at TestOpenCart.testRegistro(TestOpenCart.java:15)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SingleSuite-class-failed -->
+          <div class="suite-SingleSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ProductManagementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartTest(iMac, public void ProductManagementTest.addToCartTest(java.lang.String,java.lang.reflect.Method))">
+                  </a> <!-- addToCartTest(iMac, public void ProductManagementTest.addToCartTest(java.lang.String,java.lang.reflect.Method)) -->
+                  <span class="method-name">addToCartTest</span>
+                  <span class="parameters">(iMac, public void ProductManagementTest.addToCartTest(java.lang.String,java.lang.reflect.Method))</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.partialLinkText: Shopping Cart&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pageObjects.NavigateBar.goToCartList(NavigateBar.java:94)
+	at pageObjects.BasePage.goToCartList(BasePage.java:45)
+	at ProductManagementTest.addToCartTest(ProductManagementTest.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Shopping Cart&quot;}
+  (Session info: headless chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3Q7HR6&apos;, ip: &apos;192.168.31.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Al\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9fbc164476226a4d365124294be7933
+*** Element info: {Using=partial link text, value=Shopping Cart}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 23 more
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SingleSuite-class-failed -->
+          <div class="suite-SingleSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">ProductManagementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartMenorPrecio">
+                  </a> <!-- addToCartMenorPrecio -->
+                  <span class="method-name">addToCartMenorPrecio</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.linkText: Login&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pageObjects.NavigateBar.goLogInPage(NavigateBar.java:75)
+	at pageObjects.BasePage.goLogInPage(BasePage.java:41)
+	at BaseTestWithLogin.setupLogin(BaseTestWithLogin.java:9)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Login&quot;}
+  (Session info: headless chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-Q3Q7HR6&apos;, ip: &apos;192.168.31.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Al\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52370}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9fbc164476226a4d365124294be7933
+*** Element info: {Using=link text, value=Login}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SingleSuite-class-skipped -->
+          <div class="suite-SingleSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestOpenCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(alberto0918sd9@alonso.uy, password01, public void TestOpenCart.testLogin(java.lang.String,java.lang....)">
+                  </a> <!-- testLogin(alberto0918sd9@alonso.uy, password01, public void TestOpenCart.testLogin(java.lang.String,java.lang....) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(alberto0918sd9@alonso.uy, password01, public void TestOpenCart.testLogin(java.lang.String,java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SingleSuite-class-passed -->
+          <div class="suite-SingleSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ProductManagementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToWishTest(iMac, public void ProductManagementTest.addToWishTest(java.lang.String,java.lang.reflect.Method))">
+                  </a> <!-- addToWishTest(iMac, public void ProductManagementTest.addToWishTest(java.lang.String,java.lang.reflect.Method)) -->
+                  <span class="method-name">addToWishTest</span>
+                  <span class="parameters">(iMac, public void ProductManagementTest.addToWishTest(java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SingleSuite-class-passed -->
+          <div class="suite-SingleSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cambioMonedaParameters(GBP, public void HomePageTest.cambioMonedaParameters(java.lang.String,java.lang.reflect.Method))">
+                  </a> <!-- cambioMonedaParameters(GBP, public void HomePageTest.cambioMonedaParameters(java.lang.String,java.lang.reflect.Method)) -->
+                  <span class="method-name">cambioMonedaParameters</span>
+                  <span class="parameters">(GBP, public void HomePageTest.cambioMonedaParameters(java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SingleSuite-class-passed -->
+        </div> <!-- panel SingleSuite -->
+        <div panel-name="test-xml-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Al\IdeaProjects\Clase26OpenCartsProfeJenkins\src\test\java\TestOpenCart.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;SingleSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;password01&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;currency&quot; value=&quot;GBP&quot;/&gt;
+  &lt;parameter name=&quot;userName&quot; value=&quot;alberto0918sd9@alonso.uy&quot;/&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;test in Chrome&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestOpenCart&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testRegistro&quot;/&gt;
+          &lt;include name=&quot;testLogin&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestOpenCart --&gt;
+      &lt;class name=&quot;HomePageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;cambioMonedaParameters&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- HomePageTest --&gt;
+      &lt;class name=&quot;ProductManagementTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addToWishTest&quot;/&gt;
+          &lt;include name=&quot;addToCartTest&quot;/&gt;
+          &lt;include name=&quot;addToCartMenorPrecio&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ProductManagementTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test in Chrome --&gt;
+&lt;/suite&gt; &lt;!-- SingleSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test in Chrome (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SingleSuite');
+function tableData_SingleSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addToCartTest')
+data.setCell(0, 2, 'ProductManagementTest')
+data.setCell(0, 3, 11858);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testRegistro')
+data.setCell(1, 2, 'TestOpenCart')
+data.setCell(1, 3, 10404);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'cambioMonedaParameters')
+data.setCell(2, 2, 'HomePageTest')
+data.setCell(2, 3, 3927);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addToWishTest')
+data.setCell(3, 2, 'ProductManagementTest')
+data.setCell(3, 3, 3522);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'TestOpenCart')
+data.setCell(4, 3, 3261);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addToCartMenorPrecio')
+data.setCell(5, 2, 'ProductManagementTest')
+data.setCell(5, 3, 0);
+window.suiteTableData['SingleSuite']= { tableData: data, tableDiv: 'times-div-SingleSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <div id="times-div-SingleSuite">
+              </div> <!-- times-div-SingleSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ProductManagementTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">flush</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">HomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">flush</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ProductManagementTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToCartMenorPrecio</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestOpenCart</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">navegarInicio</span>
+                <span class="method-start">3509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegistro(Alberto, Alonso, albddertdo0918sd9@alonso.uy, 094549888, 23568899, Alonso Company, Avenida Italia 44...)</span>
+                <span class="method-start">10788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=testRegistro status=FAILURE method=TestOpenCart.testRegistro(java.lang.String, java...)</span>
+                <span class="method-start">21192 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navegarInicio</span>
+                <span class="method-start">21503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogin(alberto0918sd9@alonso.uy, password01, public void TestOpenCart.testLogin(java.lang.String,java.lang....)</span>
+                <span class="method-start">23041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=testLogin status=SUCCESS method=TestOpenCart.testLogin(java.lang.String, java.lang....)</span>
+                <span class="method-start">26302 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">navegarInicio</span>
+                <span class="method-start">26303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cambioMonedaParameters(GBP, public void HomePageTest.cambioMonedaParameters(java.lang.String,java.lang.reflect.Method))</span>
+                <span class="method-start">26671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=cambioMonedaParameters status=SUCCESS method=HomePageTest.cambioMonedaParameters(ja...)</span>
+                <span class="method-start">30598 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ProductManagementTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">navegarInicio</span>
+                <span class="method-start">30598 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupLogin(alberto0918sd9@alonso.uy, password01)</span>
+                <span class="method-start">34207 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addToWishTest(iMac, public void ProductManagementTest.addToWishTest(java.lang.String,java.lang.reflect.Method))</span>
+                <span class="method-start">36387 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=addToWishTest status=SUCCESS method=ProductManagementTest.addToWishTest(java.lang.S...)</span>
+                <span class="method-start">39909 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navegarInicio</span>
+                <span class="method-start">39910 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupLogin(alberto0918sd9@alonso.uy, password01)</span>
+                <span class="method-start">40255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addToCartTest(iMac, public void ProductManagementTest.addToCartTest(java.lang.String,java.lang.reflect.Method))</span>
+                <span class="method-start">41869 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=addToCartTest status=FAILURE method=ProductManagementTest.addToCartTest(java.lang.S...)</span>
+                <span class="method-start">53727 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navegarInicio</span>
+                <span class="method-start">53971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setupLogin(alberto0918sd9@alonso.uy, password01)</span>
+                <span class="method-start">54770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name={null} status=CREATED method=ProductManagementTest.addToCartMenorPrecio(java.lang.r...)</span>
+                <span class="method-start">65342 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestOpenCart</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">flush</span>
+                <span class="method-start">65374 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

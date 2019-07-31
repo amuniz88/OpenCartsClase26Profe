@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SingleSuite]" parallel="tests">
+  <parameter name="password" value="password01"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="currency" value="GBP"/>
+  <parameter name="userName" value="alberto0918sd9@alonso.uy"/>
+  <test thread-count="2" verbose="0" name="test in Chrome(failed)" parallel="tests">
+    <classes>
+      <class name="TestOpenCart">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="navegarInicio"/>
+          <include name="flush"/>
+          <include name="testRegistro" invocation-numbers="0"/>
+          <include name="teardownTest"/>
+        </methods>
+      </class> <!-- TestOpenCart -->
+      <class name="ProductManagementTest">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="addToCartTest" invocation-numbers="0"/>
+          <include name="navegarInicio"/>
+          <include name="flush"/>
+          <include name="addToCartMenorPrecio"/>
+          <include name="setupLogin"/>
+          <include name="teardownTest"/>
+        </methods>
+      </class> <!-- ProductManagementTest -->
+    </classes>
+  </test> <!-- test in Chrome(failed) -->
+</suite> <!-- Failed suite [SingleSuite] -->
