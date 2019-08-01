@@ -45,6 +45,7 @@ public class BaseTest {
     @BeforeSuite(alwaysRun = true)
     @Parameters("browser")
     public void setupSuite(String browser) throws MalformedURLException {
+        boolean ci = Boolean.parseBoolean(System.getProperty("ci"));
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions opt = new ChromeOptions();
             opt.addArguments("disable-infobars");
@@ -52,6 +53,10 @@ public class BaseTest {
             System.setProperty("webdriver.chrome.driver",
                     properties.getString("CHROMEDRIVER_PATH"));
             driver = new ChromeDriver(opt);
+            if(ci){
+                opt.addArguments("--headless");
+                opt.addArguments("--window-size=1980,1080");
+            }
 //            driver = new RemoteWebDriver(new URL(hubUrl), opt);
         } else if (browser.equalsIgnoreCase(
                 "firefox")) {
